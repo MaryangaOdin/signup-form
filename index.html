@@ -8,45 +8,82 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
 
     <title>
-        Calculator - By Maryanga
+        Flattering Coffee Signup Form - By Maryanga
     </title>
 </head>
 
 <body>
-    <div id="calculator">
-        <div id="screen">
-            <div id="calcstring"></div>
-            <div id="result"></div>
-        </div>
-        <div id="buttons">
-            <div class="button special">AC</div>
-            <div class="button wide" id="delete">&larr;</div>
-            <div class="button operator" value="+">+</div>
-            <div class="button number">7</div>
-            <div class="button number">8</div>
-            <div class="button number">9</div>
-            <div class="button operator" value="-">−</div>
-            <div class="button number">4</div>
-            <div class="button number">5</div>
-            <div class="button number">6</div>
-            <div class="button operator" value="*">✕</div>
-            <div class="button number">1</div>
-            <div class="button number">2</div>
-            <div class="button number">3</div>
-            <div class="button operator" value="/">÷</div>
-            <div class="button special" id="decimal">.</div>
-            <div class="button number">0</div>
-            <div class="button special wide">=</div>
+
+<main>
+    <div id="logo">
+        <div id="slogan">
+            <span class="light">F</span>
+            <span class="dark">latte</span>
+            <span class="light">ring </span>
+            <span class="light"> Coffee </span>
+            <p id="description">
+                The world's first coffee subscription service for people who don't really like coffee
+            </p>
         </div>
     </div>
+    <div id="form">
+        <p class="warning">
+            <em>WARNING: </em>this is not a real service
+        </p>
+        <ul>
+            <li>
+                Have you always wished you were a coffee drinker,
+                yet never been able to stomach the pure stuff?
+            </li>
+            <li>
+                Do you believe the secret to making good coffee
+                lies in the art of deciding what else to put in it,
+                but lack the time or inclination to figure out the perfect combination for yourself? 
+            </li>
+            <li>
+                Do you love the Red Bulls, Mountain Dews and Monsters of this world,
+                but recognize you might be aging out of their target demographic?
+            </li>
+        </ul>
+        <p class="bold">
+            Look no further! This coffee subscription service is for you!
+        </p>
+        <p class="validation">passwords do not match</p>
+        <form method="post" action ="#">
+            <label for="firstname">first name</label>
+            <label for="lastname">last name</label>
+            <input type="text" name="firstname" required>
+            <input type="text" name="lastname" required>
+            <label for="email">e-mail</label>
+            <label for="phone">mobile phone number</label>
+            <input type="email" name="email" id="email" required> 
+            <input type="text" name="phone" id="phone" maxlength="25" pattern="^\+?[0-9 ]{1,20}$" placeholder="0475555555 | +32475555555">
+            <label for="password">password</label>
+            <label for="confirm">confirm password</label>
+            <input type="password" name="password" id="password" minlength="8" placeholder="8 character minimum" required>
+            <input type="password" name="confirm" id="confirm" minlength="8" placeholder="8 character minimum" required>
+            <input type="submit" value="create account">
+        </form>
+        <p id="login">
+            Already have an account?
+            <a href="#">Log in</a>
+        </p>
+    </div>
+</main>
 
 <footer>
-    Made by <a href="https://github.com/maryangaodin">Maryanga</a>
-    for <a href="https://www.theodinproject.com/lessons/foundations-calculator">The Odin Project</a>
-    &copy; 2022
+    <p>
+        Made by <a href="https://github.com/maryangaodin">Maryanga</a>
+        for <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">The Odin Project</a>
+        &copy; 2022
+    </p>
+    <p>
+        Photo by <a href="https://unsplash.com/@brookecagle">Brooke Cagle</a> 
+        on Unsplash 
+    </p>
 </footer>
 
-<script type="text/javascript" src="./scripts/calculator.js"></script>
+<script type="text/javascript" src="./scripts/validation.js"></script>
 
 </body>
 </html>
