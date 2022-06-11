@@ -61,6 +61,11 @@ input[type="submit"]:hover {
     background-color: rgb(126, 212, 195);
 }
 
+label.required:after {
+    content: ' *';
+    color: red;
+} 
+
 label {
     font-variant: small-caps;
 }

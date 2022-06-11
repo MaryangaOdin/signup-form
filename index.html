@@ -50,16 +50,16 @@
         </p>
         <p class="validation">passwords do not match</p>
         <form method="post" action ="#">
-            <label for="firstname">first name</label>
-            <label for="lastname">last name</label>
+            <label for="firstname" class="required">first name</label>
+            <label for="lastname" class="required">last name</label>
             <input type="text" name="firstname" required>
             <input type="text" name="lastname" required>
-            <label for="email">e-mail</label>
+            <label for="email" class="required">e-mail</label>
             <label for="phone">mobile phone number</label>
             <input type="email" name="email" id="email" required> 
             <input type="text" name="phone" id="phone" maxlength="25" pattern="^\+?[0-9 ]{1,20}$" placeholder="0475555555 | +32475555555">
-            <label for="password">password</label>
-            <label for="confirm">confirm password</label>
+            <label for="password" class="required">password</label>
+            <label for="confirm" class="required">confirm password</label>
             <input type="password" name="password" id="password" minlength="8" placeholder="8 character minimum" required>
             <input type="password" name="confirm" id="confirm" minlength="8" placeholder="8 character minimum" required>
             <input type="submit" value="create account">
